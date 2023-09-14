@@ -37,13 +37,15 @@ To setup your own version of wikiGazetteer and reproducing the analysis in the p
 
 1. Install Anaconda following [these instructions](https://docs.anaconda.com/anaconda/install/).
 
-2. Create `gir19` environment:
-** Actually, way more complicated :**
+2. Create `gir19` environment: **Actually, way more complicated :**
+   
 a. first, in the repository, open conda prompt shell and delete all the useless specification of the YAML file thanks to 
 ```bash
 conda env export --no-builds > environment.yml
 ```
+
 b. Then verify inside the YAML file that the name is set to *name: gir19* + below, delete the version of frenetic and perdido (the =XXXXX should be deleted) + verify that the last line is similar to prefix: *C:\Users\Antoine\anaconda3\envs19*
+
 c. Now, and only now, you can create the gir19 env as described below 
 
 ```bash
